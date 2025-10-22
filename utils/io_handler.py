@@ -2,7 +2,7 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 import xml.etree.ElementTree as ET
-from . import covert_handler as ch
+from . import convert_handler as ch
 
 def ImportXML(file_path:os.PathLike):
     # Single Root Support
@@ -19,7 +19,7 @@ def ExportXML(element_tags:list, attribute_map:list, file_path:os.PathLike) -> N
     with open(file_path, "a") as f:
         for root in roots:
             ET.indent(root, space="    ")
-            f.write(f"{ET.tostring(root, encoding="unicode")}\n")
+            f.write(f"{ET.tostring(root, encoding='unicode')}\n")
 
 def ExportGim(file_path:os.PathLike, gim_data:bytearray) -> None:
     if os.path.exists(file_path):
