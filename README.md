@@ -1,5 +1,5 @@
 # tracy-b2xml-converter
-Custom binary to XML converter for the certain Doll Dressing-up PvP game. That software has written for research purposes.
+Custom binary to XML converter for the certain Doll Dressing-up PvP game.
 
 # License
 Commercial use is not allowed
